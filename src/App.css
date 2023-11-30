@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    width: 100%;
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(222, 26%, 31%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calculator {
+    width: 470px;
+    height: 620px;
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.theme {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.paragrafo {
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-top: 22px;
+    padding-right: 10px;
+}
+
+.numbers {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6px;
+}
+
+.inputs {
+    display: flex;
+    background-color: hsl(223, 31%, 20%);
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+.inputs input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.inputs input:checked {
+    background-color: red;
+}
+
+.display {
+    background-color: hsl(224, 36%, 15%);
+    height: 15%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 3.0rem;
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 75px 75px 75px 75px 75px;
+
+    padding: 30px 15px 15px 30px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+}
+
+.theme2 {
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+}
+
+.theme2 .theme {
+    color: black;
+}
+
+.theme2 .display {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .inputs input:checked {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.theme2 .inputs,
+.theme2 .buttons {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme3 {
+    background-color: hsl(268, 75%, 9%);
+    color: black;
+}
+
+.theme3 .theme {
+    color: hsl(52, 100%, 62%);
+}
+
+.theme3 .display {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+.theme3 .inputs input:checked {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.theme3 .inputs,
+.theme3 .buttons {
+    background-color: hsl(268, 71%, 12%);
+}
+
+@media (max-width: 600px) {
+    .app {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .calculator {
+        margin-top: 40px;
+        width: 90%;
+        height: 680px;
+    }
 }

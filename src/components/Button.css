@@ -1,0 +1,120 @@
+.del {
+    font-size: 1.5rem;
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+}
+
+.del:hover {
+    background-color: hsla(225, 21%, 49%, 0.622);
+}
+
+.reset {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+}
+
+.reset:hover {
+    background-color: hsla(225, 21%, 49%, 0.622);
+}
+
+.equal {
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+}
+
+.equal:hover {
+    background-color: hsla(6, 63%, 50%, 0.716);
+}
+
+.reset,
+.equal {
+    grid-column: span 2;
+    font-size: 1.5rem;
+}
+
+button {
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    outline: none;
+    border: none;
+    color: hsl(221, 14%, 31%);
+    background-color: white;
+    box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.714);
+}
+
+.theme2 .del,
+.theme2 .reset {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 4px 0px 0px hsl(185, 58%, 25%);
+    color: white;
+}
+
+.theme2 .equal {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 4px 0px 0px hsl(25, 99%, 27%);
+    color: white;
+}
+
+.theme2 button {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 4px 0px 0px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 button:hover {
+    background-color: hsla(60, 1%, 73%, 0.86);
+}
+
+.theme2 .del:hover,
+.theme2 .reset:hover {
+    background-color: hsla(185, 48%, 28%, 0.965);
+}
+
+.theme2 .equal:hover {
+    background-color: hsl(25, 99%, 31%);
+}
+
+.theme3 .del,
+.theme3 .reset {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 4px 0px 0px hsl(285, 91%, 52%);
+    color: white;
+}
+
+.theme3 .equal {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 4px 0px 0px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+
+.theme3 button {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 4px 0px 0px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+
+.theme3 button:hover {
+    background-color: hsl(269, 59%, 13%);
+}
+
+.theme3 .del:hover,
+.theme3 .reset:hover {
+    background-color: hsl(281, 86%, 16%);
+}
+
+.theme3 .equal:hover {
+    background-color: hsl(176, 100%, 35%);
+}
